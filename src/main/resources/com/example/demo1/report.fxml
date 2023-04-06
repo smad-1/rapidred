@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="950.0" style="-fx-background-color: E98689;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.ReportController">
+    <children>
+        <ImageView fitHeight="1000.0" fitWidth="750.0" layoutX="100.0" layoutY="-260.0" pickOnBounds="true">
+            <image>
+                <Image url="@../../../report.jpg" />
+            </image>
+        </ImageView>
+        <TextArea fx:id="ta_report" layoutX="227.0" layoutY="128.0" opacity="0.8" prefHeight="224.0" prefWidth="494.0" promptText="Please write your report here">
+         <font>
+            <Font size="16.0" />
+         </font></TextArea>
+        <Button fx:id="button_submit" layoutX="421.0" layoutY="370.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="106.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 25;" text="Submit" textFill="#e98689">
+            <font>
+                <Font name="Arial Bold" size="18.0" />
+            </font>
+        </Button>
+        <Button fx:id="back" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#onNewScene" prefHeight="42.0" prefWidth="105.0" style="-fx-background-color: white; -fx-background-radius: 25;" text="Back" textFill="#e98689">
+            <font>
+                <Font name="Arial Bold" size="18.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>

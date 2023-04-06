@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.CharityController">
+    <children>
+        <ImageView fx:id="my_image" cache="true" depthTest="ENABLE" fitHeight="700.0" fitWidth="950.0" focusTraversable="true" layoutY="-2.0" onDragDetected="#onNewScene5" pickOnBounds="true" smooth="false">
+            <effect>
+                <Blend mode="RED" />
+            </effect>
+            <image>
+                <Image url="@../../../charity.jpg" />
+            </image>
+        </ImageView>
+        <Button fx:id="dhk" layoutX="302.0" layoutY="339.0" mnemonicParsing="false" onAction="#onNewScene1" prefHeight="66.0" prefWidth="334.0" style="-fx-background-color: white; -fx-background-radius: 25;" text="Dhaka" textFill="#7d0820" AnchorPane.bottomAnchor="295.0" AnchorPane.leftAnchor="302.0" AnchorPane.rightAnchor="314.0" AnchorPane.topAnchor="339.0">
+            <font>
+                <Font name="Arial" size="18.0" />
+            </font>
+        </Button>
+        <Button fx:id="khulna" layoutX="302.0" layoutY="535.0" mnemonicParsing="false" onAction="#onNewScene3" prefHeight="66.0" prefWidth="334.0" style="-fx-background-color: white; -fx-background-radius: 25;" text="Khulna" textFill="#7d0820">
+            <font>
+                <Font name="Arial" size="18.0" />
+            </font>
+        </Button>
+        <Button fx:id="sylhet" layoutX="302.0" layoutY="241.0" mnemonicParsing="false" onAction="#onNewScene2" prefHeight="66.0" prefWidth="334.0" style="-fx-background-color: white; -fx-background-radius: 25;" text="Sylhet" textFill="#7d0820" AnchorPane.bottomAnchor="393.0" AnchorPane.leftAnchor="302.0" AnchorPane.rightAnchor="314.0" AnchorPane.topAnchor="241.0">
+            <font>
+                <Font name="Arial" size="18.0" />
+            </font>
+        </Button>
+        <Button fx:id="chattogram" layoutX="302.0" layoutY="442.0" mnemonicParsing="false" onAction="#onNewScene" prefHeight="66.0" prefWidth="334.0" style="-fx-background-color: white; -fx-background-radius: 25;" text="Chattogram" textFill="#7d0820">
+            <font>
+                <Font name="Arial" size="18.0" />
+            </font>
+        </Button>
+        <Label alignment="CENTER" layoutX="302.0" layoutY="44.0" prefHeight="83.0" prefWidth="334.0" text="Choose a region" textFill="#7d0820" AnchorPane.bottomAnchor="573.0" AnchorPane.leftAnchor="302.0" AnchorPane.rightAnchor="314.0" AnchorPane.topAnchor="44.0">
+            <font>
+                <Font name="Gabriola" size="53.0" />
+            </font>
+        </Label>
+        <Button fx:id="raj" layoutX="302.0" layoutY="147.0" mnemonicParsing="false" onAction="#onNewScene5" opacity="0.78" prefHeight="66.0" prefWidth="334.0" style="-fx-background-color: white; -fx-background-radius: 25;" text="Rajshahi" textFill="#7d0820">
+            <font>
+                <Font name="Arial" size="18.0" />
+            </font>
+        </Button>
+      <Button fx:id="back" layoutX="14.0" layoutY="21.0" mnemonicParsing="false" onAction="#onNewScene6" prefHeight="45.0" prefWidth="94.0" style="-fx-background-color: white; -fx-background-radius: 25;" text="Back" textFill="#7d0820">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

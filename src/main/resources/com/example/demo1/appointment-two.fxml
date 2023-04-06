@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1050.0" prefWidth="950.0" style="-fx-background-color: #EFD5E1;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.AppointmentTwoController">
+    <children>
+        <ScrollPane layoutX="-1.0" prefHeight="700.0" prefWidth="950.0" style="-fx-background-color: #EFD5E1;">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1050.0" prefWidth="950.0" style="-fx-background-color: #EFD5E1;">
+                    <children>
+                        <ImageView fitHeight="1050.0" fitWidth="869.0" layoutX="125.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../form1.jpg" />
+                            </image>
+                        </ImageView>
+                        <Label layoutX="341.0" layoutY="38.0" text="Blood Donation Form">
+                            <font>
+                                <Font name="Gabriola" size="40.0" />
+                            </font>
+                        </Label>
+                  <Label fx:id="label_hospital" layoutX="186.0" layoutY="155.0" prefHeight="22.0" prefWidth="597.0" text="Place:">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="button_back" layoutX="161.0" layoutY="38.0" mnemonicParsing="false" style="-fx-background-color: #FFFFFF; -fx-cursor: hand;" text="Back">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="174.0" layoutY="202.0" text="First Name:">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="tf_firstname" layoutX="279.0" layoutY="199.0" prefHeight="26.0" prefWidth="170.0" />
+                  <Label layoutX="500.0" layoutY="202.0" text="Last Name:">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="tf_lastname" layoutX="613.0" layoutY="198.0" prefHeight="26.0" prefWidth="170.0" />
+                  <Label layoutX="305.0" layoutY="88.0" prefHeight="30.0" prefWidth="336.0" text="Confidential - Please answer the following questions correctly. " />
+                  <Label layoutX="264.0" layoutY="109.0" text="This will help to protect both the donor and the patient who receives the blood." />
+                  <DatePicker fx:id="date_birth" layoutX="279.0" layoutY="253.0" prefHeight="26.0" prefWidth="172.0" />
+                  <Label layoutX="168.0" layoutY="255.0" text="Date of Birth:">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="178.0" layoutY="309.0" text="Gender:">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="cb_gender" layoutX="279.0" layoutY="307.0" prefHeight="22.0" prefWidth="174.0" style="-fx-background-color: #FFFFFF;" />
+                  <Label layoutX="498.0" layoutY="308.0" text="Occupation:">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="tf_occupation" layoutX="613.0" layoutY="306.0" prefHeight="26.0" prefWidth="170.0" />
+                  <Label layoutX="182.0" layoutY="360.0" text="Phone:">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="tf_phone" layoutX="279.0" layoutY="357.0" prefHeight="26.0" prefWidth="170.0" />
+                  <Label layoutX="521.0" layoutY="359.0" text="Email:">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="tf_email" layoutX="614.0" layoutY="357.0" prefHeight="26.0" prefWidth="170.0" />
+                  <Label layoutX="175.0" layoutY="415.0" text="Address:">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="tf_address" layoutX="279.0" layoutY="413.0" prefHeight="26.0" prefWidth="502.0" />
+                  <Label layoutX="493.0" layoutY="255.0" text="Blood Group:">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="cb_blood" layoutX="613.0" layoutY="253.0" prefHeight="26.0" prefWidth="172.0" style="-fx-background-color: #FFFFFF;" />
+                  <Label layoutX="161.0" layoutY="463.0" text="Last Donated on:">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="cb_lastdonated" layoutX="318.0" layoutY="461.0" prefHeight="22.0" prefWidth="174.0" style="-fx-background-color: #FFFFFF;" />
+                  <Label layoutX="161.0" layoutY="514.0" text="Any major operations in the past 6 months?">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="rb1_yes" layoutX="539.0" layoutY="513.0" mnemonicParsing="false" text="Yes">
+                     <font>
+                        <Font name="Arial Italic" size="14.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="tog1" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="rb1_no" layoutX="654.0" layoutY="513.0" mnemonicParsing="false" text="No" toggleGroup="$tog1">
+                     <font>
+                        <Font name="Arial Italic" size="14.0" />
+                     </font>
+                  </RadioButton>
+                  <Label layoutX="161.0" layoutY="560.0" text="Any vaccinations in the last 4 weeks?">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="rb2_yes" layoutX="539.0" layoutY="561.0" mnemonicParsing="false" text="Yes">
+                     <font>
+                        <Font name="Arial Italic" size="14.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="tog2" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="rb2_no" layoutX="654.0" layoutY="561.0" mnemonicParsing="false" text="No" toggleGroup="$tog2">
+                     <font>
+                        <Font name="Arial Italic" size="14.0" />
+                     </font>
+                  </RadioButton>
+                  <Label layoutX="161.0" layoutY="608.0" text="Are you under any medication?">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="rb3_yes" layoutX="539.0" layoutY="609.0" mnemonicParsing="false" text="Yes">
+                     <font>
+                        <Font name="Arial Italic" size="14.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="tog3" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="rb3_no" layoutX="654.0" layoutY="609.0" mnemonicParsing="false" text="No" toggleGroup="$tog3">
+                     <font>
+                        <Font name="Arial Italic" size="14.0" />
+                     </font>
+                  </RadioButton>
+                  <Label layoutX="156.0" layoutY="652.0" text="Have you taken any antibiotics within 4 weeks?">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="rb4_yes" layoutX="539.0" layoutY="653.0" mnemonicParsing="false" text="Yes">
+                     <font>
+                        <Font name="Arial Italic" size="14.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="tog4" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="rb4_no" layoutX="654.0" layoutY="653.0" mnemonicParsing="false" text="No" toggleGroup="$tog4">
+                     <font>
+                        <Font name="Arial Italic" size="14.0" />
+                     </font>
+                  </RadioButton>
+                  <Label layoutX="161.0" layoutY="699.0" text="Do you have any piercing/tattoo?">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="rb5_yes" layoutX="539.0" layoutY="700.0" mnemonicParsing="false" text="Yes">
+                     <font>
+                        <Font name="Arial Italic" size="14.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="tog5" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="rb5_no" layoutX="654.0" layoutY="700.0" mnemonicParsing="false" text="No" toggleGroup="$tog5">
+                     <font>
+                        <Font name="Arial Italic" size="14.0" />
+                     </font>
+                  </RadioButton>
+                  <Label layoutX="161.0" layoutY="741.0" text="Do you have any heart conditions?">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="rb6_yes" layoutX="539.0" layoutY="742.0" mnemonicParsing="false" text="Yes">
+                     <font>
+                        <Font name="Arial Italic" size="14.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="tog6" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="rb6_no" layoutX="654.0" layoutY="742.0" mnemonicParsing="false" text="No" toggleGroup="$tog6">
+                     <font>
+                        <Font name="Arial Italic" size="14.0" />
+                     </font>
+                  </RadioButton>
+                  <Label layoutX="161.0" layoutY="781.0" text="Do you have diabetes?">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="rb7_yes" layoutX="539.0" layoutY="782.0" mnemonicParsing="false" text="Yes">
+                     <font>
+                        <Font name="Arial Italic" size="14.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="tog7" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="rb7_no" layoutX="654.0" layoutY="782.0" mnemonicParsing="false" text="No" toggleGroup="$tog7">
+                     <font>
+                        <Font name="Arial Italic" size="14.0" />
+                     </font>
+                  </RadioButton>
+                  <Label layoutX="161.0" layoutY="841.0" text="Preferred date of appointment:">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="date_app" layoutX="429.0" layoutY="839.0" prefHeight="26.0" prefWidth="172.0" />
+                  <Button fx:id="button_submit" layoutX="626.0" layoutY="838.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="99.0" style="-fx-background-color: #FFFFFF; -fx-cursor: hand;" text="Submit">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                  </Button>
+                    </children>
+                </AnchorPane>
+            </content>
+        </ScrollPane>
+    </children>
+</AnchorPane>

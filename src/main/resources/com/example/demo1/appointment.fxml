@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="950.0" style="-fx-background-color: #EFD5E1;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.AppointmentController">
+   <children>
+      <ScrollPane layoutX="-1.0" prefHeight="700.0" prefWidth="950.0" style="-fx-background-color: #EFD5E1;">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1050.0" prefWidth="950.0" style="-fx-background-color: #EFD5E1;">
+               <children>
+                  <ImageView fitHeight="1050.0" fitWidth="869.0" layoutX="125.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../form1.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="341.0" layoutY="38.0" text="Blood Donation Form">
+                     <font>
+                        <Font name="Gabriola" size="40.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="363.0" layoutY="136.0" text="Select Hospital:">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="rb_hosA" layoutX="275.0" layoutY="206.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="396.0" text="Hospital-A ; Location : Gazipur">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="place" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="rb_hosB" layoutX="275.0" layoutY="277.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="399.0" text="Hospital-B ; Location : Uttara" toggleGroup="$place">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="rb_hosC" layoutX="275.0" layoutY="344.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="404.0" text="Hospital-C ; Location : Boardbazar" toggleGroup="$place">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="rb_bankA" layoutX="275.0" layoutY="415.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="342.0" text="Blood Bank A ; Location : Gazipur" toggleGroup="$place">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="rb_bankB" layoutX="275.0" layoutY="490.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="328.0" text="Blood Bank B ; Location : Uttara" toggleGroup="$place">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="rb_bankC" layoutX="275.0" layoutY="567.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="342.0" text="Blood Bank C ; Location : Boardbazar" toggleGroup="$place">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </RadioButton>
+                  <Button fx:id="button_next" layoutX="621.0" layoutY="625.0" mnemonicParsing="false" onAction="#handleButton" style="-fx-background-color: #FFFFFF; -fx-cursor: hand;" text="Next page">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="button_back" layoutX="164.0" layoutY="50.0" mnemonicParsing="false" style="-fx-background-color: #FFFFFF; -fx-cursor: hand;" text="Back">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
